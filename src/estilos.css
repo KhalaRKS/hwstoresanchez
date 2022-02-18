@@ -1,0 +1,9 @@
+* {
+	border: 1px solid green;
+	box-sizing: border-box;
+}
+
+#root {
+	width: 80%;
+	margin: auto;
+}
