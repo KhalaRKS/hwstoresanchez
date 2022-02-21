@@ -1,9 +1,80 @@
+/* FONTS importadas en index.html */
 * {
-	border: 1px solid green;
+	/*border: 1px solid green;*/
 	box-sizing: border-box;
 }
+body{
+	padding-top: 5em;
+	font-family: 'Poppins';
+}
+.container {
+	display: flex;
+	flex-direction: column;
+}
 
-#root {
-	width: 80%;
-	margin: auto;
+header {
+	display: flex;
+	align-items: center;
+  justify-content: space-around;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: black;
+	box-shadow: 0 2px 5px rgba(0,0,0,50%);
+	user-select: none;
+}
+header h1 {
+	padding: 0;
+	margin: 0;
+}
+header a {
+	text-decoration: none;
+	color: orange;
+	cursor: pointer;
+}
+
+.moto {
+	font-weight: 200;
+	font-style: italic;
+	color: white;
+	margin: 0;
+	top: -0.5em;
+  position: relative;
+}
+p.title {
+	margin: .75em 1em 0.2em 0.5em;
+	font-weight: bold;
+}
+
+ul.navbar-nav {
+	display: flex;
+	justify-content: space-around;
+	padding: 0;
+}
+li.nav-item {
+	list-style-type: none;
+	padding: .75em;
+	margin: auto 1em;
+	border: 1px solid orange;
+	border-radius: 8px;
+	color: white;
+	cursor: pointer;
+	text-align: -webkit-center;
+}
+
+li.nav-item:hover {
+	background-color: orange;
+}
+li.nav-item:hover > a {
+	color: white;
+	font-weight: bold;
+}
+a.nav-link::before {
+	display: block;
+	content: attr(title);
+	font-weight: bold;
+	height: 0;
+	overflow: hidden;
+	visibility: hidden;
 }

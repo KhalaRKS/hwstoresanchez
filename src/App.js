@@ -1,7 +1,10 @@
 import NavBar from "./components/NavBar";
 
 const App = () => {
-	return < ><NavBar /><p>Hol a Khalaa</p></>
+	return (
+	<>
+		<NavBar />
+	</>)
 }
 
 export default App;
