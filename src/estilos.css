@@ -12,10 +12,23 @@ body{
 	flex-direction: column;
 }
 
+.showcase {
+	display: flex;
+	justify-content: space-around;
+}
+
+.nice-border {
+	border: 1px solid rgba(0,0,0, 50%);
+	border-radius: 25px;
+}
+.shadow {
+	box-shadow: 0 0 10px rgba(0, 0, 0, 50%);
+}
+
 header {
 	display: flex;
 	align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -23,10 +36,12 @@ header {
 	background-color: black;
 	box-shadow: 0 2px 5px rgba(0,0,0,50%);
 	user-select: none;
+	padding: 0 10%;
 }
 header h1 {
 	padding: 0;
 	margin: 0;
+	font-size: 36pt;
 }
 header a {
 	text-decoration: none;
@@ -52,7 +67,9 @@ ul.navbar-nav {
 	justify-content: space-around;
 	padding: 0;
 }
+
 li.nav-item {
+	position: relative;
 	list-style-type: none;
 	padding: .75em;
 	margin: auto 1em;
@@ -61,6 +78,8 @@ li.nav-item {
 	color: white;
 	cursor: pointer;
 	text-align: -webkit-center;
+	transition: all .2s ease;
+	height: 51px;
 }
 
 li.nav-item:hover {
@@ -72,9 +91,39 @@ li.nav-item:hover > a {
 }
 a.nav-link::before {
 	display: block;
-	content: attr(title);
+	content: attr(data-text);
 	font-weight: bold;
 	height: 0;
 	overflow: hidden;
 	visibility: hidden;
+}
+.quantity-cart {
+	position: absolute;
+	top: -14px;
+	left: 33px;
+	width: 29px;
+	height: 29px;
+	border-radius: 18px;
+	background-color: red;
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+main {
+	display: flex;
+	margin: auto;
+	width: 80%;
+	font-weight: 200;
+}
+
+
+.greetings {
+ padding: 2em 0;
+ font-size: 16pt;
+}
+
+article {
+ width: 200px;
+ height: 200px;
 }
