@@ -1,0 +1,25 @@
+.itemCount{
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	width: 80%;
+	margin: auto;
+	div{
+		display: flex;
+		padding-bottom: .5em;
+		button{
+			width: 30%;
+		}
+		span{
+			width: 40%;
+			text-align: center;
+			font-weight: bold;
+		}
+		button{
+			width: 30%;
+		}
+	}
+	button{
+		width: 100%;
+	}
+}

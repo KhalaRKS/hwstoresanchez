@@ -1,5 +1,5 @@
 import React from 'react'
-import ProductBox from './ProductBox'
+import CreateBoxes from './CreateBoxes'
 
 const ItemListContainer = (props) => {
 	return (
@@ -10,13 +10,6 @@ const ItemListContainer = (props) => {
 			</div>
 		</main>
 	)
-}
-const CreateBoxes = (props) => {
-	let content = [];
-	for (let i = 0; i < parseInt(props.q); i++) { 
-		content.push( <ProductBox /> ) 
-	} 
-	return content
 }
 
 export default ItemListContainer
