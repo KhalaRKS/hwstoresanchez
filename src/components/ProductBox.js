@@ -3,7 +3,8 @@ import ItemCount from './ItemCount'
 
 const ProductBox = () => {
 	const [state, setState] = useState( null )
-	const stock = parseInt(Math.random() * 5)
+	const [stock, setStock] = useState( parseInt(Math.random() * 5) )
+	
 
 	const cb = (dato) => { setState(dato) }
 
