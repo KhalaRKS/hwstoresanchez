@@ -108,6 +108,7 @@ a.nav-link::before {
 	color: white;
 	font-size: 18px;
 	font-weight: bold;
+	text-align: center;
 }
 
 main {
@@ -131,6 +132,16 @@ article {
  padding: .5em;
  align-items:center
 }
+article span.article--stock{
+	align-self: flex-end;
+	padding: 0 .5em;
+	border-radius: 10px;
+	background-color: lightslategray;
+	color: white;
+	font-style: italic;
+	font-size: small;
+}
+
 .resultonadd{
 	background-color: rgb(110, 214, 117);
 	font-weight: bold;
