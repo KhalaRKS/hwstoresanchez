@@ -129,7 +129,7 @@ article {
 	flex-direction: column;
  width: 200px;
  height: auto;
- padding: .5em;
+ padding: .4em;
  align-items:center
 }
 article span.article--stock{
