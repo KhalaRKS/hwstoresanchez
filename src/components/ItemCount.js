@@ -1,6 +1,7 @@
-import { isValidInputTimeValue } from '@testing-library/user-event/dist/utils'
-import React from 'react'
-import { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
+
+import ItemDetailContainer from './ItemDetailContainer'
+
 import './ItemCount.scss'
 
 const ItemCount = ({initial, stock, onAdd}) => {
@@ -18,12 +19,17 @@ const ItemCount = ({initial, stock, onAdd}) => {
 	
 	return (
 		<div className='itemCount'>
-			<div>
-				<button onClick={ substractItem }>-</button>
-				<span>{ initialValue }</span>
-				<button onClick={ addItem }>+</button>
+			<div className='itemCount__controls'>
+				<button onClick={ substractItem }><span class="material-icons-outlined">remove</span></button>
+				<span><b>{ initialValue }</b></span>
+				<button onClick={ addItem }><span class="material-icons-outlined">add</span></button>
 			</div>
-			<button onClick={ () => onAdd(initialValue) } disabled={ stock==0 }>Agregar al carrito </button>
+			<button className='itemCount__controls--big' onClick={ () => onAdd(initialValue) } disabled={ stock==0 }>
+				<div className='itemCount__controls--big__add'>
+					<span class="material-icons-outlined">shopping_cart</span>
+					<span>AGREGAR</span>
+				</div>
+			</button>
 		</div>
 	)
 }

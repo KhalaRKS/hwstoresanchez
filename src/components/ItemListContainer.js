@@ -1,6 +1,8 @@
 import React, {useEffect, useState} from 'react'
-import ItemList from './ItemList'
+import {InfinitySpin }  from 'react-loader-spinner'
 
+import ItemList from './ItemList'
+import ItemDetailContainer from './ItemDetailContainer'
 
 const productsFetched = [
 	{
@@ -43,14 +45,18 @@ const productsFetched = [
 const ItemListContainer = (props) => {
 
 	const [products, setProducts] = useState()
+	const [loading, setLoading] = useState(true)
 
 	useEffect(() => { 
+		
+		setLoading(true)
 		const request = new Promise((res, rej) => {
 			setTimeout(() => { res(productsFetched) }, 2000)
 		})
 	
 		request.then((result) => {
 			setProducts(result)
+			setLoading(false)
 		})	
 	
 	}, [])
@@ -60,9 +66,8 @@ const ItemListContainer = (props) => {
 		<main className='container'>
 			<span className='greetings'>Hola <b>{props.nombre}</b>, estas son las ofertas del día!</span>
 			<div className='showcase'>
-				{	products && <ItemList products={ products } /> }
+				{	loading?<div className='loader'><InfinitySpin color="orange" /></div>:<ItemList products={ products } /> }
 			</div>
-
 		</main>
 	)
 }
