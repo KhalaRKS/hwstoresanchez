@@ -1,26 +1,20 @@
 import React, { useState } from 'react'
-
-import ItemDetailContainer from './ItemDetailContainer'
+import { useNavigate, Navigate, useLocation, Link } from 'react-router-dom'
 import './Item.scss'
 
-//const Item = ({title, description, price, pictureUrl}) => {
 const Item = (props) => {
-	const [stock, setStock] = useState( parseInt(Math.random() * 5) )
-	const [showIDC, setShowIDC] = useState( false )
-
-	const cb = () => { 
-		setShowIDC(!showIDC)
-	}
-	console.log(props.title)
-
+	const navigate = useNavigate()
+	let location = useLocation()
+	const click = () => { navigate(`/product/${props.id}`) }
+	
 	return (
-		<article className='productBox nice-border shadow'>
+		<article className='card card-shadow'>
 			<h2>{props.title}</h2>
-			<img className='productPic' src={ 'pictures/' + props.pictureUrl  } />
-			<span className='article--stock'>stock: <b>{stock}</b></span>
-			<button onClick={ cb } >DETALLES</button>
-			
-			{ showIDC?<ItemDetailContainer {...props} stock={stock} callBack={ cb }/>:null }			
+			<img src={ '/pictures/' + props.pictureUrl  } />
+			<span>stock: <b>{props.stock}</b></span>
+			<button onClick={ click }>DETALLES</button>
+			{//<Link to={}>DETALLES</Link>
+}
 		</article>
 	)
 }

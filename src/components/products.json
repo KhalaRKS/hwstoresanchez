@@ -1,0 +1,143 @@
+[
+	{
+		"id": 0,
+		"title": "iPhone 11",
+		"description": "Exercitation nisi voluptate aliqua officia eu incididunt dolor id sunt sunt proident.",
+		"price": 140000,
+		"pictureUrl": "iphone11-select-2019-family.jpg",
+		"category": "iphone",
+		"stock": 4
+	},
+	{ 
+		"id": 1,
+		"title": "iPhone SE",
+		"description": "iPhone SE en variedades de 64 y 128GB. Colores: negro, blanco y rojo",
+		"price": 160000,
+		"pictureUrl": "compare_iphone_se__ctt6b25kqxkm_large.jpg",
+		"category": "iphone",
+		"stock": 7
+	},
+	{
+		"id": 2,
+		"title": "iPhone 12",
+		"description": "Aliquip excepteur culpa aliquip Lorem voluptate excepteur nostrud tempor veniam sint magna.",
+		"price": 210000,
+		"pictureUrl": "compare_iphone_12__c71spndl2g02_large.jpg",
+		"category": "iphone",
+		"stock": 0
+	},
+	{
+		"id": 3,
+		"title": "iPhone 13",
+		"description": "Sunt proident sint cupidatat do sunt elit.",
+		"price": 250000,
+		"pictureUrl": "compare_iphone_13__wrfdzgtnv426_large.jpg",
+		"category": "iphone",
+		"stock": 1
+	},
+	{
+		"id": 4,
+		"title": "iPhone 13 PRO",
+		"description": "Lorem qui id amet dolor laborum duis exercitation esse pariatur sint aute dolor voluptate.",
+		"price": 280000,
+		"pictureUrl": "compare_iphone_13_pro__cn6f4jyk7r7m_large.jpg",
+		"category": "iphone",
+		"stock": 2
+	},
+
+	{
+		"id": 5,
+		"title": "Z Fold 3",
+		"description": "Exercitation nisi voluptate aliqua officia eu incididunt dolor id sunt sunt proident.",
+		"price": 210000,
+		"pictureUrl": "Q2_KV_Merchandising_160X160.webp",
+		"category": "samsung",
+		"stock": 11
+	},
+	{ 
+		"id": 6,
+		"title": "S22",
+		"description": "iPhone SE en variedades de 64 y 128GB. Colores: negro, blanco y rojo",
+		"price": 165000,
+		"pictureUrl": "PCD_RG_KV_Merchandising_160X160_pc.webp",
+		"category": "samsung",
+		"stock": 3
+	},
+	{
+		"id": 7,
+		"title": "Z Flip 3",
+		"description": "Aliquip excepteur culpa aliquip Lorem voluptate excepteur nostrud tempor veniam sint magna.",
+		"price": 190000,
+		"pictureUrl": "PCD_B2_KV_Merchandising_160X160.webp",
+		"category": "samsung",
+		"stock": 5
+	},
+	{
+		"id": 8,
+		"title": "Note20 ULTRA",
+		"description": "Sunt proident sint cupidatat do sunt elit.",
+		"price": 180000,
+		"pictureUrl": "ar-galaxy-note20-ultra-n985-sm-n985fznmaro-devicebackmysticbronze-thumb-297173583.webp",
+		"category": "samsung",
+		"stock": 0
+	},
+	{
+		"id": 9,
+		"title": "S22 ULTRA",
+		"description": "Lorem qui id amet dolor laborum duis exercitation esse pariatur sint aute dolor voluptate.",
+		"price": 222000,
+		"pictureUrl": "PCD_B_KV_Merchandising_376x376_.webp",
+		"category": "samsung",
+		"stock": 1
+	},
+
+
+
+	{
+		"id": 10,
+		"title": "moto 7ei",
+		"description": "Exercitation nisi voluptate aliqua officia eu incididunt dolor id sunt sunt proident.",
+		"price": 160000,
+		"pictureUrl": "161417-1200-auto.png",
+		"category": "motorola",
+		"stock": 1
+	},
+	{ 
+		"id": 11,
+		"title": "moto G200",
+		"description": "Adipisicing voluptate adipisicing ipsum exercitation enim aute eu in do tempor. Ut non nisi reprehenderit proident. Excepteur cillum voluptate laboris ad magna qui cupidatat labore duis ipsum exercitation in occaecat elit. Mollit Lorem laborum et occaecat sit eiusmod ex anim commodo aliqua est.",
+		"price": 165000,
+		"pictureUrl": "161664-1600-auto.png",
+		"category": "motorola",
+		"stock": 2
+	},
+	{
+		"id": 12,
+		"title": "moto G20",
+		"description": "Aliquip excepteur culpa aliquip Lorem voluptate excepteur nostrud tempor veniam sint magna.",
+		"price": 31000,
+		"pictureUrl": "161387-1200-auto.png",
+		"category": "motorola",
+		"stock": 0
+	},
+	{
+		"id": 13,
+		"title": "edge 20 PRO",
+		"description": "Sunt proident sint cupidatat do sunt elit.",
+		"price": 121000,
+		"pictureUrl": "161536-1200-auto.png",
+		"category": "motorola",
+		"stock": 3
+	},
+	{
+		"id": 14,
+		"title": "moto g71",
+		"description": "Lorem qui id amet dolor laborum duis exercitation esse pariatur sint aute dolor voluptate.",
+		"price": 67000,
+		"pictureUrl": "161713-1200-auto.png",
+		"category": "motorola",
+		"stock": 9
+	}
+]
+
+

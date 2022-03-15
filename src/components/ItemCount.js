@@ -16,17 +16,22 @@ const ItemCount = ({initial, stock, onAdd}) => {
 		if (initialValue < stock)
 		setInitialValue( initialValue + 1 )
 	}
-	
+	const buyItem = () => {
+		let temp = stock-initialValue
+		
+		setInitialValue( 1 )
+		onAdd(initialValue)
+	}
 	return (
 		<div className='itemCount'>
 			<div className='itemCount__controls'>
-				<button onClick={ substractItem }><span class="material-icons-outlined">remove</span></button>
+				<button onClick={ substractItem }><span className="material-icons-outlined">remove</span></button>
 				<span><b>{ initialValue }</b></span>
-				<button onClick={ addItem }><span class="material-icons-outlined">add</span></button>
+				<button onClick={ addItem }><span className="material-icons-outlined">add</span></button>
 			</div>
-			<button className='itemCount__controls--big' onClick={ () => onAdd(initialValue) } disabled={ stock==0 }>
+			<button className='itemCount__controls--big' onClick={ () => buyItem()  } disabled={ stock==0 }>
 				<div className='itemCount__controls--big__add'>
-					<span class="material-icons-outlined">shopping_cart</span>
+					<span className="material-icons-outlined">shopping_cart</span>
 					<span>AGREGAR</span>
 				</div>
 			</button>

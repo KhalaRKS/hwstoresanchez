@@ -1,29 +1,6 @@
 /* FONTS importadas en index.html */
-* {
-	/*border: 1px solid green;*/
-	box-sizing: border-box;
-}
-body{
-	padding-top: 5em;
-	font-family: 'Poppins';
-}
-.container {
-	display: flex;
-	flex-direction: column;
-}
 
-.showcase {
-	display: flex;
-	justify-content: space-around;
-}
 
-.nice-border {
-	border: 1px solid rgba(0,0,0, 50%);
-	border-radius: 10px;
-}
-.shadow {
-	box-shadow: 0 0 10px rgba(0, 0, 0, 50%);
-}
 
 header {
 	display: flex;
@@ -111,23 +88,15 @@ a.nav-link::before {
 	text-align: center;
 }
 
-main {
-	display: flex;
-	margin: auto;
-	width: 80%;
-	font-weight: 200;
-}
 
 
-.greetings {
- padding: 2em 0;
- font-size: 16pt;
-}
+
+
 
 article {
 	display: flex;
 	flex-direction: column;
- width: 200px;
+ 
  height: auto;
  padding: .4em;
  align-items:center

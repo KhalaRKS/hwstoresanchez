@@ -1,9 +1,20 @@
 import React from 'react'
+import { Routes, Route } from 'react-router-dom'
 import ItemListContainer from './ItemListContainer'
+import ItemDetailContainer from './ItemDetailContainer'
+import Cart from './Cart';
 
 const Main = () => {
 	return (
-		<ItemListContainer nombre="Leonardo" />
+		<main>
+			<Routes>
+				<Route path="*" element={<ItemListContainer nombre="Leonardo"/>} />
+				<Route path="/" element={<ItemListContainer nombre="Leonardo"/>} />
+				<Route path="/category/:catID" element={<ItemListContainer/>} />
+				<Route path="/product/:itemID" element={<ItemDetailContainer /> } />
+				<Route path="/cart" element={<Cart/>} />
+			</Routes>
+		</main>
 	)
 }
 
