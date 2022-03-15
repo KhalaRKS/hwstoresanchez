@@ -12,9 +12,8 @@ const Item = (props) => {
 			<h2>{props.title}</h2>
 			<img src={ '/pictures/' + props.pictureUrl  } />
 			<span>stock: <b>{props.stock}</b></span>
+			<span className='price'>$<b>{props.price}</b></span>
 			<button onClick={ click }>DETALLES</button>
-			{//<Link to={}>DETALLES</Link>
-}
 		</article>
 	)
 }

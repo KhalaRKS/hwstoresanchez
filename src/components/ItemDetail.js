@@ -4,6 +4,7 @@ import toast, { Toaster } from "react-hot-toast";
 import "./ItemDetail.scss";
 
 const ItemDetail = ({id, pictureUrl, title, description, price, stock, callBack}) => {
+	
 
 	const [itemStock, setItemStock] = useState(stock)
 
