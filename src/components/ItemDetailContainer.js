@@ -5,13 +5,11 @@ import { InfinitySpin } from 'react-loader-spinner'
 import ItemDetail from './ItemDetail'
 import productsFetched from './products.json'
 
-const ItemDetailContainer = (props) => {
+const ItemDetailContainer = ({setCartItems, cartItems}) => {
 	const [product, setProduct] = useState()
 	const [loading, setLoading] = useState(true)
 	let { itemID } = useParams()
 	
-	console.info({itemID})
-
 	useEffect(() => {
 		setLoading(true)
 		const request = new Promise((res, rej) => {
@@ -27,7 +25,7 @@ const ItemDetailContainer = (props) => {
 	
 	return (
 		<>
-			{ loading?<div className='container'><InfinitySpin color="orange" /></div>:<ItemDetail {...product[0]} /> }
+			{ loading?<div className='container'><InfinitySpin color="orange" /></div>:<ItemDetail {...product[0]} setCartItems={setCartItems} cartItems={cartItems} /> }
 		</>
 	)
 }

@@ -1,13 +1,15 @@
 import React, { useEffect, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 import ItemDetailContainer from './ItemDetailContainer'
-
 import './ItemCount.scss'
 
-const ItemCount = ({initial, stock, onAdd}) => {
+
+const ItemCount = ({initial, stock, onAdd, cartItems}) => {
 
 	const [initialValue, setInitialValue] = useState( initial )
-	
+	const navigate = useNavigate()
+
 	const substractItem = () => {
 		if (initialValue > 1)
 		setInitialValue( initialValue - 1 )
@@ -17,11 +19,10 @@ const ItemCount = ({initial, stock, onAdd}) => {
 		setInitialValue( initialValue + 1 )
 	}
 	const buyItem = () => {
-		let temp = stock-initialValue
-		
 		setInitialValue( 1 )
 		onAdd(initialValue)
 	}
+	
 	return (
 		<div className='itemCount'>
 			<div className='itemCount__controls'>
@@ -30,10 +31,12 @@ const ItemCount = ({initial, stock, onAdd}) => {
 				<button onClick={ addItem }><span className="material-icons-outlined">add</span></button>
 			</div>
 			<button className='itemCount__controls--big' onClick={ () => buyItem()  } disabled={ stock==0 }>
-				<div className='itemCount__controls--big__add'>
 					<span className="material-icons-outlined">shopping_cart</span>
 					<span>AGREGAR</span>
-				</div>
+			</button>
+			<button className='itemCount__controls--big' onClick={ () => navigate('/cart')  } disabled={ cartItems==0 }>
+					<span className="material-icons-outlined">shopping_bag</span>
+					<span>FINALIZAR</span>
 			</button>
 		</div>
 	)

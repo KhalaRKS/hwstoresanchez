@@ -5,14 +5,16 @@
 header {
 	display: flex;
 	align-items: center;
-  justify-content: space-between;
-	position: fixed;
+	justify-content: space-between;
+	position: absolute;
 	top: 0;
 	left: 0;
 	right: 0;
 	background-color: black;
-	box-shadow: 0 2px 5px rgba(0,0,0,50%);
+	box-shadow: 0 2px 5px rgb(0 0 0 / 50%);
+	-webkit-user-select: none;
 	user-select: none;
+	z-index: 1;
 	padding: 0 10%;
 }
 header h1 {
@@ -73,19 +75,6 @@ a.nav-link::before {
 	height: 0;
 	overflow: hidden;
 	visibility: hidden;
-}
-.quantity-cart {
-	position: absolute;
-	top: -14px;
-	left: 33px;
-	width: 29px;
-	height: 29px;
-	border-radius: 18px;
-	background-color: red;
-	color: white;
-	font-size: 18px;
-	font-weight: bold;
-	text-align: center;
 }
 
 

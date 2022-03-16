@@ -1,11 +1,17 @@
 import React, {useState} from "react";
 import toast, { Toaster } from "react-hot-toast";
+import ItemCount from "./ItemCount";
 
 import "./ItemDetail.scss";
 
-const ItemDetail = ({id, pictureUrl, title, description, price, stock, callBack}) => {
+const ItemDetail = ({id, pictureUrl, title, description, price, stock, setCartItems, cartItems}) => {
 	
-
+	const notify = (value) => {
+		toast.success(value>1?"Productos agregados al carrito.":"Producto agregado al carrito.")
+		setCartItems(cartItems+value)
+		setItemStock(itemStock-value)
+	};
+	
 	const [itemStock, setItemStock] = useState(stock)
 
   return (
@@ -33,7 +39,7 @@ const ItemDetail = ({id, pictureUrl, title, description, price, stock, callBack}
               <span className="info__price-nostock">SIN STOCK</span>
             )}
           </div>
-
+					{<ItemCount stock={itemStock} initial={1} onAdd={notify} cartItems={cartItems} />}
         </div>
       </section>
     </article>

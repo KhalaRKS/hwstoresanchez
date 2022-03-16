@@ -20,9 +20,9 @@
 		border: 0px;
 		border-radius: 5px;
 		padding: 1em;
-		//margin-bottom: 1em;
 		transition: box-shadow .2s ease;
 		cursor: pointer;
+		margin-bottom: .75em;
 		&:enabled {
 			box-shadow: 0 0 5px 1px rgb(0 0 0 / 40%);
 
@@ -40,6 +40,24 @@
 		width: 100%;
 		outline: none !important;
 		
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		span:last-child{
+			font-size: 14pt;
+			font-weight: bold;
+			margin-left: .5em;
+			margin-top: 2px;
+
+		}
+
+	}
+	/*button.itemCount__controls--big {
+		display: block;
+		width: 100%;
+		outline: none !important;
+		
 		.itemCount__controls--big__add {
 			display: flex;
 			align-items: center;
@@ -53,5 +71,5 @@
 
 			}
 		}
-	}
+	}*/
 }
