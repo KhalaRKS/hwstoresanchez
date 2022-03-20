@@ -1,18 +1,22 @@
-import React, {useState} from "react";
-import toast, { Toaster } from "react-hot-toast";
-import ItemCount from "./ItemCount";
+import React, {useState, useContext, useEffect} from "react";
+import toast from "react-hot-toast";
 
+import { contextFromCart } from '../context/CartContext';
+import ItemCount from "./ItemCount";
 import "./ItemDetail.scss";
 
-const ItemDetail = ({id, pictureUrl, title, description, price, stock, setCartItems, cartItems}) => {
+const ItemDetail = ({ id, pictureUrl, title, description, price, stock }) => {
 	
-	const notify = (value) => {
+	const { quantity, addItem } = useContext(contextFromCart);
+	const [itemStock, setItemStock] = useState(stock)
+
+	const onAdd = (value) => {
 		toast.success(value>1?"Productos agregados al carrito.":"Producto agregado al carrito.")
-		setCartItems(cartItems+value)
 		setItemStock(itemStock-value)
+		addItem(id, value, title, price)
 	};
 	
-	const [itemStock, setItemStock] = useState(stock)
+	
 
   return (
     <article className="itemDetailBox">
@@ -30,7 +34,7 @@ const ItemDetail = ({id, pictureUrl, title, description, price, stock, setCartIt
 
         <div className="info__price">
           <div className="info__price__stock">
-            <h4>${price}</h4>
+            <h4>${Intl.NumberFormat('es-AR').format(price)}</h4>
             {itemStock ? (
               <span className="info__price-stock">
                 STOCK DISPONIBLE: <b>{itemStock}</b>
@@ -39,7 +43,7 @@ const ItemDetail = ({id, pictureUrl, title, description, price, stock, setCartIt
               <span className="info__price-nostock">SIN STOCK</span>
             )}
           </div>
-					{<ItemCount stock={itemStock} initial={1} onAdd={notify} cartItems={cartItems} />}
+					{<ItemCount stock={itemStock} initial={1} onAdd={onAdd} quantity={quantity}  />}
         </div>
       </section>
     </article>

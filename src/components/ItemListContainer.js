@@ -1,5 +1,5 @@
-import React, {useEffect, useState} from 'react'
-import {InfinitySpin }  from 'react-loader-spinner'
+import React, { useEffect, useState } from 'react'
+import { InfinitySpin }  from 'react-loader-spinner'
 import { useParams } from 'react-router-dom'
 
 import ItemList from './ItemList'
