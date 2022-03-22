@@ -34,23 +34,12 @@ const CartContext = ({ children }) => {
 		}
 	}
 
-	const removeItem = (itemID) => {
-		/*let index = cart.findIndex(value => value.id == itemID)
+	const removeItem = (itemIndex) => {
 		let auxCart = cart.slice()
-		console.log('QT', cart[index].qt)
-
-		setQuantity(quantity - auxCart[index].qt)
-		auxCart.splice(index, 1)
+		setQuantity(quantity - auxCart[itemIndex].qt)
+		auxCart.splice(itemIndex, 1)
 		
-		setCart( auxCart )*/
-		
-		setCart( cart.filter( value => {
-			if (value.id == itemID ) {
-				setQuantity(quantity-value.qt)
-				return false
-			}
-			return true
-		}	) )
+		setCart( auxCart )
 	}
 
 	const clearCart = () => {

@@ -16,6 +16,6 @@ const App = () => {
       </CartContext>
     </BrowserRouter>
   );
-};
+}; 
 
 export default App;
