@@ -5,7 +5,7 @@ import { contextFromCart } from '../context/CartContext';
 import './Cart.scss';
 
 const Cart = () => {
-  const { cart, total, cantidad, removeItem, clearCart } = useContext(contextFromCart);
+  const { cart, total, removeItem, clearCart } = useContext(contextFromCart);
 
   return (
     <div className="cart">

@@ -10,11 +10,11 @@ const Main = () => {
 	return (
 		<main>
 			<Routes>
-				<Route path="*" element={<ItemListContainer nombre="Leonardo"/>} />
-				<Route path="/" element={<ItemListContainer nombre="Leonardo"/>} />
+				<Route path="/" element={<ItemListContainer/>} />
 				<Route path="/category/:catID" element={<ItemListContainer/>} />
 				<Route path="/product/:itemID" element={<ItemDetailContainer /> } />
 				<Route path="/cart" element={<Cart />} />
+				<Route path="*" element={<ItemListContainer/>} />
 			</Routes>
 		</main>
 	)
