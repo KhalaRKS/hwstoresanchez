@@ -1,4 +1,4 @@
-![Vercel](https://vercelbadge.vercel.app/api/[SanchoMazorka]/[hwstoresanchez])
+![Vercel](https://vercelbadge.vercel.app/api/SanchoMazorka/hwstoresanchez)
 
 # Getting Started with Create React App
 
