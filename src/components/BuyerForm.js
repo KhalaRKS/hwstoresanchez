@@ -10,10 +10,10 @@ const BuyerForm = ({endStep}) => {
         <label className='mail'>Mail</label>
       </div>
       <div className='row'>
-        <input className='name' type='text' maxLength='25' placeholder='Juan' />
-        <input className='lastname' type='text' maxLength='25' placeholder='Perez' />
-        <input className='phone' type='text' maxLength='10' placeholder='1150000000' />
-        <input className='mail' type='text' placeholder='mail@coderhouse.com'/>
+        <input className='name' type='text' pattern='[A-Za-z]' maxLength='25' placeholder='Juan' required/>
+        <input className='lastname' type='text' pattern='[A-Za-z]' maxLength='25' placeholder='Perez' required/>
+        <input className='phone' type='text' pattern='[0-9]' maxLength='10' placeholder='1150000000' required/>
+        <input className='mail' type='email' placeholder='mail@coderhouse.com' required/>
       </div>
 			<div className='row'>
 				<button>COMPRAR</button>
