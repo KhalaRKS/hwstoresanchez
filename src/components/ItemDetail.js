@@ -16,9 +16,7 @@ const ItemDetail = ({ id, pictureUrl, title, description, price, stock }) => {
 		addItem(id, value, title, price)
 	};
 	
-	
-
-  return (
+	return (
     <article className="itemDetailBox">
       <div className="itemDetailBox__frame">
         <img src={"/pictures/" + pictureUrl} />
@@ -38,7 +36,7 @@ const ItemDetail = ({ id, pictureUrl, title, description, price, stock }) => {
             {itemStock ? (
               <span className="info__price-stock">
                 STOCK DISPONIBLE: <b>{itemStock}</b>
-              </span>
+              </span> 
             ) : (
               <span className="info__price-nostock">SIN STOCK</span>
             )}

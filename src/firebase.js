@@ -31,3 +31,6 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 export const dbFirestore = getFirestore(app)
 export const fbCollection = collection(dbFirestore, 'products')
+export const fbCollectionOrders = collection(dbFirestore, 'orders')
+
+

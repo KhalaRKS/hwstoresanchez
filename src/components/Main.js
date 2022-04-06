@@ -6,7 +6,6 @@ import ItemDetailContainer from './ItemDetailContainer'
 import Cart from './Cart';
 
 const Main = () => {
-	
 	return (
 		<main>
 			<Routes>

@@ -60,3 +60,58 @@ button {
 		}
 	}		
 }
+// GLOBAL
+div.row {
+	display: flex;
+}
+div.column {
+	display: flex;
+	flex-direction: column;
+}
+div.center {
+	margin: 0 auto;
+}
+
+// BuyerForm.js
+.buyer {
+	margin: 20px auto;
+
+	div {
+		gap: 20px;
+	}
+	label {
+		user-select: none;
+	}
+	input {
+		outline: none;
+		background-color: transparent;
+		border: none;
+		border-bottom: 1px solid grey;
+		font-size: 14pt;
+
+		&::placeholder {
+			color: lightgray;
+		}
+		&:focus {
+			border-bottom-color: orange;
+		}
+	}
+	.name {
+		width: 150px;
+	}
+	.lastname {
+		width: 150px;
+	}
+	.phone {
+		width: 150px;
+	}
+	.mail {
+		width: 250px;
+	}
+	button {
+		margin: 20px auto;
+		&:focus {
+			outline-color: orange;
+		}
+	}
+}

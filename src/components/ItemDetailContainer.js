@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import { useParams } from 'react-router-dom'
 import { InfinitySpin } from 'react-loader-spinner'
-import { getDocs, query , where } from 'firebase/firestore'
+import { addDoc, getDocs, query , where } from 'firebase/firestore'
 
 import { fbCollection, dbFirestore } from '../firebase'
 import ItemDetail from './ItemDetail'
@@ -24,7 +24,7 @@ const ItemDetailContainer = () => {
 	}, [itemID])
 	
 	return (
-		<>{ console.log(product)}
+		<>
 			{ loading?<div className='container'><InfinitySpin color="orange" /></div>:<ItemDetail { ...product } /> }
 		</>
 	)
