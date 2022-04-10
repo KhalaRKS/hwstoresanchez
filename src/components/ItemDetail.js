@@ -1,6 +1,5 @@
-import React, {useState, useContext, useEffect} from "react";
+import { useState, useContext } from "react";
 import toast from "react-hot-toast";
-
 import { contextFromCart } from '../context/CartContext';
 import ItemCount from "./ItemCount";
 import "./ItemDetail.scss";

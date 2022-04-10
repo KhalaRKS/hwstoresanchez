@@ -1,9 +1,8 @@
-import React, { useContext, useState } from 'react';
+import { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
-
 import { contextFromCart } from '../context/CartContext';
 import Buy from './Buy';
-import BuyerForm from './BuyerForm';
+import Checkout from './Checkout';
 import './Cart.scss';
 
 const Cart = () => {
@@ -46,16 +45,19 @@ const Cart = () => {
 								<span className='alignprice'>${Intl.NumberFormat('es-AR').format(item.price * item.qt)}</span>
 							</div>
 						</div>);
-					})}
-					{cart.length==0 && <span>POR AHORA NO TIENES NADA EN EL CARRITO, <Link to='/'>REVISA NUESTROS PRODUCTOS</Link></span>}
+					})
+					}
+					{ cart.length==0 && <span>POR AHORA NO TIENES NADA EN EL CARRITO, <Link to='/'>REVISA NUESTROS PRODUCTOS</Link></span> }
 				</div>
 				
-				{cart.length>0 && <div className="checkout">
+				{
+				cart.length>0 && <div className="checkout">
 					<h2>CHECKOUT</h2>
 					<div className='bigtotal'>TOTAL: <span>${Intl.NumberFormat('es-AR').format(total)}</span></div>
-				</div>}
+				</div>
+				}
 			</div>
-			{cart.length>0 && <BuyerForm endStep={endStep} /> }
+			{ cart.length>0 && <Checkout endStep={endStep} /> }
 			</>
 			:
 			<Buy {...data} />}

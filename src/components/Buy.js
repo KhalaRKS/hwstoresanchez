@@ -1,7 +1,6 @@
-import React, { useEffect, useContext, useState } from 'react'
-
+import { useEffect, useContext, useState } from 'react'
 import { addDoc, serverTimestamp } from 'firebase/firestore';
-import { fbCollection, dbFirestore, fbCollectionOrders } from '../firebase'
+import { fbCollectionOrders } from '../firebase'
 import { contextFromCart } from '../context/CartContext';
 import { InfinitySpin } from 'react-loader-spinner';
 
@@ -9,14 +8,10 @@ const Buy = ({name, phone, mail}) => {
 	const { cart, total, clearCart } = useContext(contextFromCart)
 	const [ID, setID] = useState(null)
 	const [loading, setLoading] = useState(true)
-	const order = {buyer: {name: name, phone: phone, email: mail}, items: [], date: '', total: 0}
+	const order = {buyer: {name, phone, mail}, items: [], date: '', total: 0}
 	
-	cart.map( (product) => {
-		for (let index = 0; index < product.qt; index++) {
-			order.items.push({ id: product.id, title: product.title, price: product.price })
-			order.total += product.price
-		}
-	})
+	order.items = cart
+	order.total = total
 	order.date = serverTimestamp()
 
 	useEffect(() => {
@@ -39,7 +34,6 @@ const Buy = ({name, phone, mail}) => {
 			<p>Tu comprobante: <b>{ID}</b></p>
 		</div>
 	)
-	//{ buyer: { name, phone, email }, items: [{ id, title, price }], date, total  }
 }
 
 export default Buy

@@ -1,8 +1,6 @@
-import React, { useState, useEffect, useContext } from 'react'
-
+import { useState, useEffect, useContext } from 'react'
 import { contextFromCart } from '../context/CartContext';
 import './CartWidget.scss'
-
 
 const CartWidget = () => {
 
@@ -14,13 +12,10 @@ const CartWidget = () => {
 		setTimeout(()=> { setRipple(false) }, 500)
 	}, [quantity])
 	
-	return (
-	<>
+	return (<>
 		<span className='material-icons-outlined'>shopping_cart</span>
-		{ quantity>0 && <span className={'quantity-cart ' +  (ripple && 'add-ripple')  }>{ quantity }</span> 
-		}
-	</>
-	)
+		{ quantity>0 && <span className={'quantity-cart ' +  (ripple && 'add-ripple')  }>{ quantity }</span> 	}
+	</>)	
 }
 
 export default CartWidget

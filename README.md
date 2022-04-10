@@ -1,8 +1,7 @@
 <div align='center'>
  <img src="https://www.greatplacetowork.com.ar/images/coderhouse-logo.png" alt="coder house logo">
- <h3 style='margin-bottom: 0px; margin-top: 0px; font-size: 24pt'>PROYECTO FINAL</h3>
- <h3 style='margin-top: 0px; font-style: Italic;'>Curso ReactJS</h3>
- <span style='display: flex; justify-content: center; gap: 20px;'>
+ <h1 style='margin-bottom: 0px; margin-top: 0px;'>PROYECTO FINAL - CURSO REACTJS</h1>
+  <span style='display: flex; justify-content: center; gap: 20px;'>
 	<img style='margin: auto 0;' src="https://vercelbadge.vercel.app/api/SanchoMazorka/hwstoresanchez" alt="vercel" >
 	<img style='margin: auto 0;' src="https://img.shields.io/github/last-commit/SanchoMazorka/hwstoresanchez" alt="vercel" >
 	<a href='https://hwstoresanchez.vercel.app/'>VER DEMO</a>

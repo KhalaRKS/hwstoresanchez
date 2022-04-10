@@ -1,10 +1,8 @@
-import React from 'react'
-import { useNavigate, useLocation } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import './Item.scss'
 
 const Item = (props) => {
 	const navigate = useNavigate()
-	let location = useLocation()
 	const click = () => { navigate(`/product/${props.id}`) }
 	
 	return (

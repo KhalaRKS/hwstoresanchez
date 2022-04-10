@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import { InfinitySpin }  from 'react-loader-spinner'
 import { useParams } from 'react-router-dom'
-import { getDocs, addDoc, query , where } from 'firebase/firestore'
+import { getDocs, query , where } from 'firebase/firestore'
 
 import { fbCollection } from '../firebase'
 import ItemList from './ItemList'
-import productsFetched from './products.json'
 
 const ItemListContainer = () => {
 
