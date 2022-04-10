@@ -1,21 +1,40 @@
-![Vercel](https://vercelbadge.vercel.app/api/SanchoMazorka/hwstoresanchez)
+<div align='center'>
+ <img src="https://www.greatplacetowork.com.ar/images/coderhouse-logo.png" alt="coder house logo">
+ <h1 style='margin-bottom: 0px'>PROYECTO FINAL</h1>
+ <h2 style='margin-top: 0px; font-style: Italic;'>Curso ReactJS</h2>
+ <span style='display: flex; justify-content: center; gap: 20px;'>
+	<img style='margin: auto 0;' src="https://vercelbadge.vercel.app/api/SanchoMazorka/hwstoresanchez" alt="vercel" >
+	<img style='margin: auto 0;' src="https://img.shields.io/github/last-commit/SanchoMazorka/hwstoresanchez" alt="vercel" >
+	<a href='https://hwstoresanchez.vercel.app/'>VER DEMO</a>
+ </span>
+</div>
 
-# `PROYECTO FINAL CURSO REACT JS @ CODERHOUSE`
-https://hwstoresanchez.vercel.app/
+### `INSTALACIÓN`
 
-## `LIBRERÍAS`
+`$ git clone https://github.com/SanchoMazorka/hwstoresanchez.git`
 
-### `react-hot-toast @2.2.0`
+`$ cd hwstoresanchez`
+
+`$ npm install`
+
+`$ npm start`
+
+### `LIBRERÍAS`
+
+**`react-hot-toast @2.2.0`**
 Toasts para indicar resultados de navegación.
 
-### `react-loader-spinner @6.0.0-0`
+**`react-loader-spinner @6.0.0-0`**
 Spinner de infinito para indicar tiempos de carga.
 
-### `sass @1.49.9`
+**`sass @1.49.9`**
 Agilización de la implementación de estilos propios.
 
-### `firebase @9.6.3`
+**`firebase @9.6.3`**
 Implementación DB no relacional para suministrar contenido al sitio.
 
-## `PARA EL EVALUADOR`
+**`react-router-dom @6.2.2`**
+Implementación rutas para navegación entre componentes.
+
+### `PARA EL EVALUADOR`
 Se puede ingresar a una ruta que no está listada en la web, la misma se llama `/admin` y permite comprobar el ID de la orden.
