@@ -1,8 +1,8 @@
 import { Routes, Route } from 'react-router-dom'
 import ItemListContainer from './ItemListContainer'
 import ItemDetailContainer from './ItemDetailContainer'
-import Cart from './Cart';
-import Admin from './Admin';
+import Cart from './Cart'
+import Admin from './Admin'
 
 const Main = () => {
 	return (

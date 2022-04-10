@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import './ItemCount.scss'
 
 const ItemCount = ({initial, stock, onAdd, quantity }) => {
 

@@ -1,12 +1,12 @@
-import { useContext, useState } from 'react';
-import { Link } from 'react-router-dom';
-import { contextFromCart } from '../context/CartContext';
-import Buy from './Buy';
-import Checkout from './Checkout';
-import './Cart.scss';
+import { useContext, useState } from 'react'
+import { Link } from 'react-router-dom'
+import { contextFromCart } from '../context/CartContext'
+import Buy from './Buy'
+import Checkout from './Checkout'
+
 
 const Cart = () => {
-  const { cart, total, removeItem, clearCart } = useContext(contextFromCart);
+  const { cart, total, removeItem, clearCart } = useContext(contextFromCart)
 	const [data, setData] = useState(null)
 	const [receipt, setReceipt] = useState(false)
 
@@ -44,7 +44,7 @@ const Cart = () => {
 							<div className='subtotal'>SUBTOTAL: 
 								<span className='alignprice'>${Intl.NumberFormat('es-AR').format(item.price * item.qt)}</span>
 							</div>
-						</div>);
+						</div>)
 					})
 					}
 					{ cart.length==0 && <span>POR AHORA NO TIENES NADA EN EL CARRITO, <Link to='/'>REVISA NUESTROS PRODUCTOS</Link></span> }
@@ -62,7 +62,7 @@ const Cart = () => {
 			:
 			<Buy {...data} />}
 		</div>
-  );
-};
+  )
+}
 
-export default Cart;
+export default Cart

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState } from 'react'
 
 const Checkout = ({endStep}) => {
 
@@ -28,7 +28,7 @@ const Checkout = ({endStep}) => {
 				<button disabled={!valid}>COMPRAR</button>
 			</div>
     </form>
-  );
-};
+  )
+}
 
-export default Checkout;
+export default Checkout

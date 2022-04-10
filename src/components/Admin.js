@@ -52,10 +52,6 @@ const Admin = () => {
 						<span><b>Fecha:</b> {Date(order.data().date.seconds)}</span>
 						<span><b>Monto final:</b> ${order.data().total}</span>
 						<br/>
-						<span><b>Cliente</b> {order.data().buyer.name}</span>
-						<span><b>Teléfono:</b> {order.data().buyer.phone}</span>
-						<span><b>Mail:</b> {order.data().buyer.mail}</span>
-						<br/>
 						{order.data().items.map( (item, index) => {
 							return <span key={index}><b>Producto:</b> {item.title} | <b>Precio:</b> ${item.price} | <b>Cantidad:</b>	 {item.qt}</span>
 						})

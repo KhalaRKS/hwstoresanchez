@@ -1,8 +1,8 @@
-import { Toaster } from 'react-hot-toast';
-import { BrowserRouter } from 'react-router-dom';
-import CartContext from './context/CartContext';
-import NavBar from './components/NavBar';
-import Main from './components/Main';
+import { Toaster } from 'react-hot-toast'
+import { BrowserRouter } from 'react-router-dom'
+import CartContext from './context/CartContext'
+import NavBar from './components/NavBar'
+import Main from './components/Main'
 
 const App = () => {
 
@@ -14,7 +14,7 @@ const App = () => {
         <Toaster position="top-center" reverseOrder={false} />
       </CartContext>
     </BrowserRouter>
-  );
-}; 
+  )
+}
 
-export default App;
+export default App

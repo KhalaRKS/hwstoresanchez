@@ -1,19 +1,18 @@
-import { useState, useContext } from "react";
-import toast from "react-hot-toast";
-import { contextFromCart } from '../context/CartContext';
-import ItemCount from "./ItemCount";
-import "./ItemDetail.scss";
+import { useState, useContext } from "react"
+import toast from "react-hot-toast"
+import { contextFromCart } from '../context/CartContext'
+import ItemCount from "./ItemCount"
 
 const ItemDetail = ({ id, pictureUrl, title, description, price, stock }) => {
 	
-	const { quantity, addItem } = useContext(contextFromCart);
+	const { quantity, addItem } = useContext(contextFromCart)
 	const [itemStock, setItemStock] = useState(stock)
 
 	const onAdd = (value) => {
 		toast.success(value>1?"Productos agregados al carrito.":"Producto agregado al carrito.")
 		setItemStock(itemStock-value)
 		addItem(id, value, title, price)
-	};
+	}
 	
 	return (
     <article className="itemDetailBox">
@@ -44,7 +43,7 @@ const ItemDetail = ({ id, pictureUrl, title, description, price, stock }) => {
         </div>
       </section>
     </article>
-  );
-};
+  )
+}
 
-export default ItemDetail;
+export default ItemDetail

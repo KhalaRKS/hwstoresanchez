@@ -1,5 +1,4 @@
 import { useNavigate } from 'react-router-dom'
-import './Item.scss'
 
 const Item = (props) => {
 	const navigate = useNavigate()

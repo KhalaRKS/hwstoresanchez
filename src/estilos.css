@@ -1,6 +1,3 @@
-/* FONTS importadas en index.html */
-
-
 
 header {
 	display: flex;
@@ -90,10 +87,6 @@ a.active {
 	font-weight: bold;
 }
 
-
-
-
-
 article {
 	display: flex;
 	flex-direction: column;
@@ -102,15 +95,6 @@ article {
  padding: .4em;
  align-items:center
 }
-/*article span.article--stock{
-	align-self: flex-end;
-	padding: 0 .5em;
-	border-radius: 10px;
-	background-color: lightslategray;
-	color: white;
-	font-style: italic;
-	font-size: small;
-}*/
 
 .resultonadd{
 	background-color: rgb(110, 214, 117);
@@ -118,7 +102,6 @@ article {
 	margin-top: .5em;
 	padding: 0 .25em;
 }
-
 
 .ItemDetailContainerBox{
 	display: flex;

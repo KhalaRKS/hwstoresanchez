@@ -1,7 +1,9 @@
-import { Link, NavLink } from 'react-router-dom';
-import CartWidget from './CartWidget';
+import { Link, NavLink } from 'react-router-dom'
+import CartWidget from './CartWidget'
 
 const NavBar = () => {
+	//const cat = useParams() //|| 'HOME'
+	const cat = 'CATEGORÍAS'
   return (
     <header>
       <div className='container__nav'>
@@ -12,15 +14,16 @@ const NavBar = () => {
       </div>
       <nav>
         <ul className='navbar-nav'>
-          <li className='nav-item'>
-            <NavLink className='nav-link' data-text='Samsung' to='/category/samsung'>Samsung</NavLink>
-          </li>
-          <li className='nav-item'>
-						<NavLink className='nav-link' data-text='iPhone' to='/category/iphone'>iPhone</NavLink>
-          </li>
-          <li className='nav-item'>
-						<NavLink className='nav-link' data-text='Motorola' to='/category/motorola'>Motorola</NavLink>
-          </li>
+					<li className='nav-item dropdown'>
+						<span className='catname'>{cat}</span>
+						<div class="dropbtn">
+  						<div class="dropdown-content">
+    						<NavLink className='nav-link' to='/category/samsung'>Samsung</NavLink>
+    						<NavLink className='nav-link' to='/category/iphone'>iPhone</NavLink>
+    						<NavLink className='nav-link' to='/category/motorola'>Motorola</NavLink>
+  						</div>
+						</div>
+					</li>
           <li className='nav-item cartNav'>
 						<NavLink className='nav-link' data-text='X' to='cart'>
               <CartWidget />
@@ -29,7 +32,7 @@ const NavBar = () => {
         </ul>
       </nav>
     </header>
-  );
-};
+  )
+}
 
-export default NavBar;
+export default NavBar

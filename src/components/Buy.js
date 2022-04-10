@@ -1,8 +1,8 @@
 import { useEffect, useContext, useState } from 'react'
-import { addDoc, serverTimestamp } from 'firebase/firestore';
+import { addDoc, serverTimestamp } from 'firebase/firestore'
 import { fbCollectionOrders } from '../firebase'
-import { contextFromCart } from '../context/CartContext';
-import { InfinitySpin } from 'react-loader-spinner';
+import { contextFromCart } from '../context/CartContext'
+import { InfinitySpin } from 'react-loader-spinner'
 
 const Buy = ({name, phone, mail}) => {
 	const { cart, total, clearCart } = useContext(contextFromCart)

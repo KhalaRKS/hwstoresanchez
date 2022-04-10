@@ -1,11 +1,10 @@
 import { useState, useEffect, useContext } from 'react'
-import { contextFromCart } from '../context/CartContext';
-import './CartWidget.scss'
+import { contextFromCart } from '../context/CartContext'
 
 const CartWidget = () => {
 
 	const [ripple, setRipple] = useState(false)
-	const { quantity } = useContext(contextFromCart);	
+	const { quantity } = useContext(contextFromCart)
 
 	useEffect(() => {
 		setRipple(true)

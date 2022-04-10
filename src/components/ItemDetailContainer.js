@@ -12,19 +12,18 @@ const ItemDetailContainer = () => {
 	const [loading, setLoading] = useState(true)
 	const [error, setError] = useState(false)
 	let { itemID } = useParams()
-	
+
+
 	useEffect(() => {
-		const document = getDocs(query(fbCollection, where('id', '==', parseInt(itemID) )))
+		const document = getDocs(query(fbCollection, where('id', '==', Number(itemID) )))
 		document.then( (res) => {
 			setError(false)
 			setLoading(true)
-			try {
+			try{ 
 				setProduct( res.docs[0].data() )	
 			}
 			catch (error) {
-				if (error.name == 'TypeError'){
-					setError(true)
-				}
+				setError(true)
 			}
 		})
 		document.catch( err => console.warn(err) )
