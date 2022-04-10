@@ -1,7 +1,7 @@
 <div align='center'>
  <img src="https://www.greatplacetowork.com.ar/images/coderhouse-logo.png" alt="coder house logo">
- <h1 style='margin-bottom: 0px; border-bottom: none;'>PROYECTO FINAL</h1>
- <h2 style='margin-top: 0px;  border-bottom: none; font-style: Italic;'>Curso ReactJS</h2>
+ <h1 style='margin-bottom: 0px; border-bottom: none !important;'>PROYECTO FINAL</h1>
+ <h2 style='margin-top: 0px;  border-bottom: none !important; font-style: Italic;'>Curso ReactJS</h2>
  <span style='display: flex; justify-content: center; gap: 20px;'>
 	<img style='margin: auto 0;' src="https://vercelbadge.vercel.app/api/SanchoMazorka/hwstoresanchez" alt="vercel" >
 	<img style='margin: auto 0;' src="https://img.shields.io/github/last-commit/SanchoMazorka/hwstoresanchez" alt="vercel" >
@@ -10,8 +10,9 @@
 </div>
 
 <div style='align=center; margin-top: 25px;'>
-<img src="https://github.com/SanchoMazorka/hwstoresanchez/blob/main/public/pictures/preview1.jpg?raw=true" alt="preview">
+	<img src="https://github.com/SanchoMazorka/hwstoresanchez/blob/main/public/pictures/preview1.jpg?raw=true" alt="preview">
 </div>
+
 ### `PRE-REQUISITOS`
 
 Instalar `npm` desde [aquí](https://www.npmjs.com/).
