@@ -1,5 +1,5 @@
 <div align='center'>
- <img src="https://www.greatplacetowork.com.ar/images/coderhouse-logo.png" alt="coder house logo">
+ <img src="[https://www.greatplacetowork.com.ar/images/coderhouse-logo.png](https://jobs.coderhouse.com/assets/logos_coderhouse.png)" alt="coder house logo">
  <h1 style='margin-bottom: 0px; margin-top: 0px;'>PROYECTO FINAL - CURSO REACTJS</h1>
   <span style='display: flex; justify-content: center; gap: 20px;'>
 	<img style='margin: auto 0;' src="https://vercelbadge.vercel.app/api/SanchoMazorka/hwstoresanchez" alt="vercel" >
